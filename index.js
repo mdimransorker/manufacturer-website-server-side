@@ -270,7 +270,7 @@ async function run() {
       }
     );
     //admin
-    
+    app.get("/admin/allUsers", verifyJWT, verifyAdmin, async (req, res) => {
       const result = await userCollection.find().toArray();
       res.send({ success: true, result });
       console.log(result);
