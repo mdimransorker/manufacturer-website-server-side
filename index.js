@@ -289,7 +289,7 @@ async function run() {
       const updateDoc = {
         $set: { role: "admin" },
       };
-      
+      const result = await userCollection.updateOne(filter, updateDoc);
       res.send({ success: true, result });
     });
 
