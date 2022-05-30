@@ -4,7 +4,7 @@
 
 ## Functionality
 - Used jwt token for verifying user.
-- Used Mongodb for storing data.
+- Used Mongodb DataBase for storing data.
 - Protected admin route and verified the admin level api requests.
 - Used stripe for payment.
 
